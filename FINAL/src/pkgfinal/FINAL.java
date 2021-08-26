@@ -45,15 +45,7 @@ public class FINAL extends JPanel implements KeyListener {
     //PrintWriter output; //create the file writer
 
     FINAL() {
-        /*
-        try {
-            
-            file = new Scanner(new File ("score.txt")); //opens the nouns file
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(FINAL.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        highScore = Integer.parseInt(file.nextLine()); //gets the first line and or the number of nouns 
-         */
+   
         this.addKeyListener(this); //add the keyboard input
         setFocusable(true); // need this to set the focus of the keyboard
 
@@ -159,15 +151,7 @@ public class FINAL extends JPanel implements KeyListener {
         super.paintComponent(g); //clear screen
         Dimension s = this.getSize(); //gets the size of the current window
 
-        /*
-        try {
-            
-            file = new Scanner(new File ("score.txt")); //opens the nouns file
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(FINAL.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        highScore = Integer.parseInt(file.nextLine()); //gets the first line and or the number of nouns 
-         */
+      
         if (screen == 1) { //start menu
             g.drawImage(background, -10, -40, null); //draw the background image
 
